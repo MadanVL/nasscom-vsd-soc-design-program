@@ -75,4 +75,8 @@ Chips are generally made up of three major physical parts:
 ![Screenshot 2025-04-10 175151](https://github.com/user-attachments/assets/71656b65-7f85-402f-adfe-eaecc95f9be4)
 ![Screenshot 2025-04-10 175839](https://github.com/user-attachments/assets/13c62d15-5733-4815-a589-29e8a047c770)
 
+<br>
+
+
+
 
