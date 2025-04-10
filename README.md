@@ -47,29 +47,33 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 
 DAY 1 Lecture Summary
 
-Learned how VLSI technology integrates millions of tiny transistors into chips, enabling faster, smaller, and more affordable electronics.
+  - Learned how VLSI technology integrates millions of tiny transistors into chips, enabling faster, smaller, and more affordable electronics.
 
-Explored the Arduino board to see why its central microcontroller unit (MCU) is crucial.
+  - Explored the Arduino board to see why its central microcontroller unit (MCU) is crucial.
 
-The MCU handles everything—from reading sensors to controlling lights—thanks to VLSI advancements.
+  - The MCU handles everything—from reading sensors to controlling lights—thanks to VLSI advancements.
 
-The Arduino board includes key components like the microprocessor (the brain of the system), voltage regulator, I/O pins, and communication interfaces, all working together to perform various tasks.
+  - The Arduino board includes key components like the microprocessor (the brain of the system), voltage regulator, I/O pins, and communication interfaces, all working together to perform various tasks.
 
 <li> Chip Packaging and Components </li>
 <br>
-Facilities that manufacture chips, called 'FOUNDRIES', are crucial because they determine the chip’s efficiency and performance.
+  - Facilities that manufacture chips, called 'FOUNDRIES', are crucial because they determine the chip’s efficiency and performance.
 
 <br>
-Inside these chips are pre-designed digital blocks called 'MACROS' that help improve the chip’s functionality and speed.
+  - Inside these chips are pre-designed digital blocks called 'MACROS' that help improve the chip’s functionality and speed.
 
 <br>
+
 Chips are generally made up of three major physical parts:
 
-Core – The central zone where the full logic circuit is laid out.
+1) <b>Core</b>: The central zone where the full logic circuit is laid out.
 
-Pads – Act as gateways for electrical signals to move in and out of the chip.
+2) <b>Pads</b>: Act as gateways for electrical signals to move in and out of the chip.
 
-Die – Represents the total silicon area of the chip that contains both logic and I/O components.
+3) <b>Die<b>: Represents the total silicon area of the chip that contains both logic and I/O components.
+
 ![Screenshot 2025-04-10 175031](https://github.com/user-attachments/assets/88385355-c514-405d-9b84-b968ebf59ee3)
+![Screenshot 2025-04-10 175151](https://github.com/user-attachments/assets/71656b65-7f85-402f-adfe-eaecc95f9be4)
+![Screenshot 2025-04-10 175839](https://github.com/user-attachments/assets/13c62d15-5733-4815-a589-29e8a047c770)
 
 
