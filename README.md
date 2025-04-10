@@ -123,6 +123,25 @@ In the final step, the design is checked for correctness:
 
  STA (Static Timing Analysis) – Verifies the design meets timing constraints.
 
+ 
+## OPENLANE AND STRIVE CHIPSETS
+
+OpenLane began as an open-source project aiming to facilitate a genuine open-source tape-out experiment. It originated from e-fabless and serves as a platform that incorporates various tools like **Yosys, OpenRoad, Magic, KLlayout**, and other open-source tools. OpenLane streamlines the different stages of silicon implementation, making them easier to understand and work with. At e-fabless, they have a series of SOC (System on Chip) designs called Strive. Strive SOCs are entirely open, featuring open PDK (Process Design Kit), open RTL (Register Transfer Level), and open EDA (Electronic Design Automation) tools.
+
+The Main aim of Openlane is to **produce clean GDSII without human intervention.**
+
+<br>
+
+**<li>OpenLANE ASIC design flow</li>**
+
+<br>
+
+![Screenshot 2025-04-10 233610](https://github.com/user-attachments/assets/e404c718-71c2-4b4b-ac74-d65719094bb7)
+
+</ul>
+<br>
+
+
 
 
 
