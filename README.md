@@ -46,6 +46,7 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 ### INTRODUCTION
 
 DAY 1 Lecture Summary
+
 Learned how VLSI technology integrates millions of tiny transistors into chips, enabling faster, smaller, and more affordable electronics.
 
 Explored the Arduino board to see why its central microcontroller unit (MCU) is crucial.
