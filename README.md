@@ -70,4 +70,6 @@ Core – The central zone where the full logic circuit is laid out.
 Pads – Act as gateways for electrical signals to move in and out of the chip.
 
 Die – Represents the total silicon area of the chip that contains both logic and I/O components.
+![Screenshot 2025-04-10 175031](https://github.com/user-attachments/assets/88385355-c514-405d-9b84-b968ebf59ee3)
+
 
