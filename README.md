@@ -100,9 +100,9 @@ Power planning involves setting up the chip's power supply network (VDD and GND)
 **Step 3 – Placement:**
 Standard cells are placed in their planned locations. This happens in two stages:
 
-Global Placement – Rough positioning of cells.
+ Global Placement – Rough positioning of cells.
 
-Detailed Placement – Fine-tuning of exact cell positions.
+ Detailed Placement – Fine-tuning of exact cell positions.
 
 **Step 4 – Clock Tree Synthesis (CTS):**
 The clock signal is distributed throughout the chip using special tree-like structures to ensure it reaches all parts at the same time, preventing timing delays.
@@ -110,18 +110,18 @@ The clock signal is distributed throughout the chip using special tree-like stru
 **Step 5 – Routing:**
 Once placement and clock planning are done, we connect all components using metal layers:
 
-Global Routing – Planning the paths.
+ Global Routing – Planning the paths.
 
-Detailed Routing – Drawing the exact wire routes.
+ Detailed Routing – Drawing the exact wire routes.
 
 **Step 6 – Sign-off Checks:**
 In the final step, the design is checked for correctness:
 
-DRC (Design Rule Check) – Ensures layout follows manufacturing rules.
+ DRC (Design Rule Check) – Ensures layout follows manufacturing rules.
 
-LVS (Layout vs. Schematic) – Confirms that layout matches the circuit design.
+ LVS (Layout vs. Schematic) – Confirms that layout matches the circuit design.
 
-STA (Static Timing Analysis) – Verifies the design meets timing constraints.
+ STA (Static Timing Analysis) – Verifies the design meets timing constraints.
 
 
 
