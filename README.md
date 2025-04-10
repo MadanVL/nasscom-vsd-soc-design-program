@@ -72,7 +72,6 @@ Chips are generally made up of three major physical parts:
 
 3) <b>Die<b>: Represents the total silicon area of the chip that contains both logic and I/O components.
 
-![Screenshot 2025-04-10 175031](https://github.com/user-attachments/assets/88385355-c514-405d-9b84-b968ebf59ee3)
 ![Screenshot 2025-04-10 175151](https://github.com/user-attachments/assets/71656b65-7f85-402f-adfe-eaecc95f9be4)
 ![Screenshot 2025-04-10 175839](https://github.com/user-attachments/assets/13c62d15-5733-4815-a589-29e8a047c770)
 
