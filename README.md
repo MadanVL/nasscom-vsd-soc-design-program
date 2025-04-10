@@ -88,6 +88,41 @@ Process Design Kit is PDK data which contains information about the manufacturin
 
 <br>
 
+Above shows simplified RTL to GDSII flow.Steps invloved are explained as follows:
+
+**Step 1 – Synthesis:**
+This step converts the RTL design into a gate-level netlist using pre-designed blocks from the Standard Cell Library (SCL). These standard cells come in regular shapes but different sizes to perform basic logic functions.
+
+**Step 2 – Floorplanning & Power Planning:**
+Here, we decide the layout of major blocks on the chip—where inputs, outputs, and various components should go to save space.
+Power planning involves setting up the chip's power supply network (VDD and GND) using dedicated routing structures.
+
+**Step 3 – Placement:**
+Standard cells are placed in their planned locations. This happens in two stages:
+
+Global Placement – Rough positioning of cells.
+
+Detailed Placement – Fine-tuning of exact cell positions.
+
+**Step 4 – Clock Tree Synthesis (CTS):**
+The clock signal is distributed throughout the chip using special tree-like structures to ensure it reaches all parts at the same time, preventing timing delays.
+
+**Step 5 – Routing:**
+Once placement and clock planning are done, we connect all components using metal layers:
+
+Global Routing – Planning the paths.
+
+Detailed Routing – Drawing the exact wire routes.
+
+**Step 6 – Sign-off Checks:**
+In the final step, the design is checked for correctness:
+
+DRC (Design Rule Check) – Ensures layout follows manufacturing rules.
+
+LVS (Layout vs. Schematic) – Confirms that layout matches the circuit design.
+
+STA (Static Timing Analysis) – Verifies the design meets timing constraints.
+
 
 
 
