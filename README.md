@@ -248,7 +248,7 @@ run_floorplan
 ```
 This will create a folder inside **runs** folder of **picorv32a** directory.
 it will take a while to execute.once done we will get **PDN GENERATION IS SUCESSFUL** as shown in below image.
-![Screenshot from 2025-04-11 23-29-19](https://github.com/user-attachments/assets/d7844548-d136-429c-9d47-d1cf810600ec)
+![Screenshot from 2025-04-11 23-26-36](https://github.com/user-attachments/assets/5e39b09f-abfe-4440-9b33-4a15f6915618)
 ![Screenshot from 2025-04-11 23-35-43](https://github.com/user-attachments/assets/d5da6b11-42b1-4402-9aa3-b29d0e852110)
 Units is measured in microns,
 **DIEAREA** is given in the below image:
