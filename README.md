@@ -213,6 +213,11 @@ The flipflop percentage is obtained by formula i.e **Flop Ratio = ((no of D_flip
 so we get Flop ratio =(1613/18036)*100 = **8.94 %.**
 
 
+## DAY-2
+
+
+
+
 
 
 
