@@ -254,6 +254,42 @@ Units is measured in microns,
 **DIEAREA** is given in the below image:
 ![Screenshot from 2025-04-11 23-45-25](https://github.com/user-attachments/assets/78ad6dc4-ca2b-4af4-8b39-11f9bacd2714)
 
+To see the actual layout after the floorplan ,go the folders as shown below:
+```
+openlane/designs/picorv32a/runs/08-02_06-43/results/floorplan
+```
+
+now we need to open the **magic** file by the  following command
+<br>
+
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+![Screenshot from 2025-04-11 23-50-19](https://github.com/user-attachments/assets/25460a84-cbe8-4c98-b0f6-bddbb91db711)
+<br>
+To zoom in press left button of mouse then right button and press z 
+<br>
+![Screenshot from 2025-04-11 23-51-06](https://github.com/user-attachments/assets/ba73e104-3a00-4a1b-9a7e-39749c219d25)
+<br>
+
+In order to know the details of any cell in the layout , just move the cursor to that cell and press **S** to select the cell and then in the window of **tkcon** enter the command **"what"**. then it will displey the details of the selected cell.
+lets see the detail of horizontal and vertical pins , in tkcon window it shows that the pin is in the metal 3 for horizontal pins ,similarly for the vertical pins, we see that thepin is at metal 2. image is shown below.
+<br>
+![Screenshot from 2025-04-11 23-57-49](https://github.com/user-attachments/assets/18687fb1-f773-4cd2-a638-4405aec81a72)
+![Screenshot from 2025-04-12 00-00-19](https://github.com/user-attachments/assets/1f5e1688-8e95-4f6e-b0b5-5d492adbb008)
+
+<br>
+
+![Screenshot from 2025-04-12 00-02-45](https://github.com/user-attachments/assets/7ba4b55a-b72b-4ee2-8347-865003d7e151)
+![Screenshot from 2025-04-12 00-02-14](https://github.com/user-attachments/assets/8dd29a53-6499-45eb-b009-73433be85541)
+
+<br>
+
+
+
+
+
+
 
 
 
