@@ -208,9 +208,9 @@ run_synthesis
 It'll take a while (1-2 min) to perform synthesis but once it's done,we will see a message saying **'Synthesis was successful'**.
 ![Screenshot from 2025-04-11 15-37-43](https://github.com/user-attachments/assets/3eab5523-48e8-4060-af43-b9cc6c39c077)
 ![Screenshot from 2025-04-11 15-38-47](https://github.com/user-attachments/assets/2aacf3e9-a24f-434e-b0dc-c138b3e36445)
+Total number of counter D flip-flops is **1613** and the total number of cells is **18036**.
 The flipflop percentage is obtained by formula i.e **Flop Ratio = ((no of D_flipflops) / (Total no of cells))100**
 so we get Flop ratio =(1613/18036)*100 = **8.94 %.**
-
 
 
 
