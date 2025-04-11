@@ -219,6 +219,7 @@ Configuration variables and their default values for *floorplanning* , *placemen
 ![Screenshot from 2025-04-11 23-28-41](https://github.com/user-attachments/assets/59584575-da7f-4b1b-94d4-4a30f50900f8)
 ![Screenshot from 2025-04-11 23-28-55](https://github.com/user-attachments/assets/9a122c4e-be18-4ee0-8b4d-02dd0f3142d6)
 ![Screenshot from 2025-04-11 23-29-08](https://github.com/user-attachments/assets/c683808c-02c3-4b22-b0d3-473b73367f68)
+![Screenshot from 2025-04-11 23-29-19](https://github.com/user-attachments/assets/165a3739-6db4-4abd-b042-07012f377b5c)
 
 
 
