@@ -141,6 +141,77 @@ The Main aim of Openlane is to **produce clean GDSII without human intervention.
 </ul>
 <br>
 
+### COMMANDS USED IN OpenLANE FLOW:
+
+```
+1. prep -design <design> -tag <tag> -config <config> -init_design_config -overwrite
+2. run_synthesis
+3. run_floorplan
+4. run_placement
+5. run_cts
+6. run_routing
+7. run_magic
+8. run_magic
+9. run_magic_spice_export
+10. run_magic_drc
+11. run_netgen
+12. run_magic_antenna_check
+
+for fully automated run we can use command : ./flow.tcl -deisgn picorv32a
+```
+
+
+### TOOL INVOCATION & OPERATION:
+
+- We're using the Sky130_fd_sc_hd PDK variant.
+- "Sky130" refers to the process or node name.
+- "fd" indicates the foundry name, which is SkyWater foundry.
+- "sc" denotes standard cell library files.
+- "hd" represents high density, a specific variant.
+- The Sky130_fd_sc_hd variant includes various technology files such as Verilog, Spice, Techlef, Meglef, Mag, GDS, CDL, LIB, LEF, etc.
+- The techlef file provides layer information essential for the design process.
+
+  <br>
+
+<ul
+
+
+**<li>Directory order to invoke the tool OPENLANE </li>**
+```
+Desktop/work/tools/openlane_working_dir/openlane
+```
+
+In order to enter into BASH in terminal ,we must use a command 
+```
+docker
+```
+
+Now enter the follwing commands to invoke the openlane in terminal i.e using bash programming:
+
+```
+-bash-4.2$ pwd
+/OpenLANE_flow 
+-ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
+
+```
+![Screenshot from 2025-04-11 15-13-23](https://github.com/user-attachments/assets/f9c3a482-0bbe-409f-a6e2-5c316071f21a)
+Design preperation completed
+![Screenshot from 2025-04-11 15-21-53](https://github.com/user-attachments/assets/679f4c75-336a-447a-bf24-b4a85f068f2d)
+
+### GETTING STARTED - SYNTHESIZING THE DESIGN :
+
+Next step is we need to perform the Synthesis process on the design. command used is
+
+```
+run_synthesis
+```
+It'll take a while (1-2 min) to perform synthesis but once it's done,we will see a message saying **'Synthesis was successful'**.
+![Screenshot from 2025-04-11 15-37-43](https://github.com/user-attachments/assets/3eab5523-48e8-4060-af43-b9cc6c39c077)
+![Screenshot from 2025-04-11 15-38-47](https://github.com/user-attachments/assets/2aacf3e9-a24f-434e-b0dc-c138b3e36445)
+The flipflop percentage is obtained by formula i.e **Flop Ratio = ((no of D_flipflops) / (Total no of cells))100**
+so we get Flop ratio =(1613/18036)*100 = **8.94 %.**
+
+
 
 
 
