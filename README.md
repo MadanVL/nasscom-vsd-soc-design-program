@@ -221,6 +221,41 @@ Configuration variables and their default values for *floorplanning* , *placemen
 ![Screenshot from 2025-04-11 23-29-08](https://github.com/user-attachments/assets/c683808c-02c3-4b22-b0d3-473b73367f68)
 ![Screenshot from 2025-04-11 23-29-19](https://github.com/user-attachments/assets/165a3739-6db4-4abd-b042-07012f377b5c)
 
+### CHIP FLOOR PLANNING CONSIDERATION 
+
+<ul>
+    
+**<li> UTILIZATION FACTOR AND ASPECT RATIO </li>**
+
+In order to calculate the Utilization Factor and Aspect Ratio, we must know the height and width of core and die areas.
+formula is given by:
+
+**Utilization Factor = area occupied by the netlist / Total area occupied by the core**
+
+--> If the utilization factor is 1 then it denotes 100 % utilization.
+--> We never go for 100 % utilization, we go for 50 % or 60 % factor.
+
+**Aspect Ratio = height of the core / width of the core**
+
+--> When aspect ratio is 1 , then its a square chip.
+![Screenshot 2025-04-11 174127](https://github.com/user-attachments/assets/4c9a36b3-5bed-4bc1-ba48-df3f7f0d5887)
+
+### STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
+
+Once synthesis is sucessful,next step is floorplan. we use command 
+```
+run_floorplan
+```
+This will create a folder inside **runs** folder of **picorv32a** directory.
+it will take a while to execute.once done we will get **PDN GENERATION IS SUCESSFUL** as shown in below image.
+![Screenshot from 2025-04-11 23-29-19](https://github.com/user-attachments/assets/d7844548-d136-429c-9d47-d1cf810600ec)
+![Screenshot from 2025-04-11 23-35-43](https://github.com/user-attachments/assets/d5da6b11-42b1-4402-9aa3-b29d0e852110)
+Units is measured in microns,
+**DIEAREA** is given in the below image:
+![Screenshot from 2025-04-11 23-45-25](https://github.com/user-attachments/assets/78ad6dc4-ca2b-4af4-8b39-11f9bacd2714)
+
+
+
 
 
 
