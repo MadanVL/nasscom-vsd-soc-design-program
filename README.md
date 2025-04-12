@@ -325,10 +325,10 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ### **SPICE deck creation for CMOS inverter**
 
--Component connectivity
--Component values
--Identify 'nodes'
--Name 'nodes'
+- Component connectivity
+- Component values
+- Identify 'nodes'
+- Name 'nodes'
 ![Screenshot 2025-04-12 183145](https://github.com/user-attachments/assets/20b81dd1-121f-4b45-b21d-ee6e07b422af)
 ![Screenshot 2025-04-12 183225](https://github.com/user-attachments/assets/48c5d8b2-d56b-4501-8cc3-8f7c6b043fbd)
 
