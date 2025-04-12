@@ -323,7 +323,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ## DAY-3
 
-**SPICE deck creation for CMOS inverter**
+### **SPICE deck creation for CMOS inverter**
 
 -Component connectivity
 -Component values
