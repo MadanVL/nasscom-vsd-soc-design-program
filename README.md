@@ -288,7 +288,6 @@ lets see the detail of horizontal and vertical pins , in tkcon window it shows t
 ### Library Binding and Placement
 
 Netlist binding and initial place design.
-![Screenshot 2025-04-12 124217](https://github.com/user-attachments/assets/a9f9d624-0bed-4731-863c-10f619c34fa2)
 ![Screenshot 2025-04-12 124252](https://github.com/user-attachments/assets/4fb55a31-c928-4b6e-8da0-a4794a056e8d)
 ![Screenshot 2025-04-12 122723](https://github.com/user-attachments/assets/87f9f41f-d378-40ef-883c-f053affdca1e)
 
