@@ -316,6 +316,12 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![Screenshot from 2025-04-12 13-30-06](https://github.com/user-attachments/assets/7423f9a5-3895-4ed6-892e-b1f51abfdfd3)
 ![Screenshot from 2025-04-12 13-31-46](https://github.com/user-attachments/assets/9df78398-bd70-4ac2-8774-508f49e750f2)
 
+### Cell Design Flow
+
+![Screenshot 2025-04-12 144428](https://github.com/user-attachments/assets/54e33ac6-6361-4127-a468-f14d0dfa8401)
+
+
+
 
 
 
