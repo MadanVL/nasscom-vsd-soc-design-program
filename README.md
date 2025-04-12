@@ -294,7 +294,6 @@ Netlist binding and initial place design.
 Optimize placement using estimated wire-length and capacitance.
 
 When sender and receiver are far diastance use buffer and repeaters.Hence there will no single loss.
-![Screenshot 2025-04-12 123524](https://github.com/user-attachments/assets/4179aee9-e116-4053-852a-33591bc88d2b)
 ![Screenshot 2025-04-12 130144](https://github.com/user-attachments/assets/0fe18d7b-b2b1-40f4-b3dd-7148d81390f7)
 
 
