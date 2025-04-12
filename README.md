@@ -296,6 +296,26 @@ Optimize placement using estimated wire-length and capacitance.
 When sender and receiver are far diastance use buffer and repeaters.Hence there will no single loss.
 ![Screenshot 2025-04-12 130144](https://github.com/user-attachments/assets/0fe18d7b-b2b1-40f4-b3dd-7148d81390f7)
 
+### STEPS TO RUN PLACEMENT
+
+Once the Floorplanning is done sucessfully , the next step in the process is Placement. 
+To run the placement use the command
+```
+run_placement
+```
+![Screenshot from 2025-04-12 13-25-36](https://github.com/user-attachments/assets/85305ce2-b750-457f-ae41-3fa95d6e6634)
+
+Once Placement process is done , next step is to check whether the cells are placed correctly or not.by using **magic** tool.
+
+use the below command to view the standerd cells placement. image is shown below
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+```
+
+![Screenshot from 2025-04-12 13-30-06](https://github.com/user-attachments/assets/7423f9a5-3895-4ed6-892e-b1f51abfdfd3)
+![Screenshot from 2025-04-12 13-31-46](https://github.com/user-attachments/assets/9df78398-bd70-4ac2-8774-508f49e750f2)
+
 
 
 
