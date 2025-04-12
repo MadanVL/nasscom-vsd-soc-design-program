@@ -370,6 +370,9 @@ Y(output) connecting the drain of nmos and pmos
 ![Screenshot from 2025-04-12 21-58-31](https://github.com/user-attachments/assets/90b76091-a32a-4c7e-8416-bc88c930f89b)
 Poly
 ![Screenshot from 2025-04-12 22-00-11](https://github.com/user-attachments/assets/9f081bb3-d615-423c-98d7-777701c13166)
+CMOS fabrication 
+![Screenshot 2025-04-12 215022](https://github.com/user-attachments/assets/97f40cec-99c8-4350-9730-536ba7936453)
+
 
 
 
