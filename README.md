@@ -332,6 +332,10 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![Screenshot 2025-04-12 183145](https://github.com/user-attachments/assets/20b81dd1-121f-4b45-b21d-ee6e07b422af)
 ![Screenshot 2025-04-12 184428](https://github.com/user-attachments/assets/874ef770-d5b4-4bec-aafe-d85263c5bbc4)
 
+Switching Threshold Vm
+![Screenshot 2025-04-12 185024](https://github.com/user-attachments/assets/976bd445-a1df-4641-ba45-c2704ee598b5)
+
+
 
 
 
