@@ -336,6 +336,42 @@ Switching Threshold Vm
 ![Screenshot 2025-04-12 185024](https://github.com/user-attachments/assets/976bd445-a1df-4641-ba45-c2704ee598b5)
 
 
+  1.Git clone vsdstdcelldesign    
+  Commands to open inverter layout in magic  
+  
+```bash
+  #Change directory to openlane
+  cd Desktop/work/tools/openlane_working_dir/openlane
+
+  #Clone the repository with custom inverter design
+  git clone https://github.com/nickson-jose/vsdstdcelldesign
+
+  #Change into repository directory
+  cd vsdstdcelldesign
+
+  #Copy magic tech file to the repo directory for easy access
+  cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
+
+  #Check contents whether everything is present
+  ls
+
+  #Command to open custom inverter layout in magic
+  magic -T sky130A.tech sky130_inv.mag &
+```
+![Screenshot from 2025-04-12 21-34-00](https://github.com/user-attachments/assets/939b694e-3721-413f-b80b-d6bd81d69169)
+![Screenshot from 2025-04-12 21-33-15](https://github.com/user-attachments/assets/86e86bbc-3ce4-4229-a185-7a0a153f97ee)
+CMOS inverter layout
+![Screenshot from 2025-04-12 21-33-00](https://github.com/user-attachments/assets/cc20cd98-bbe3-409b-8dad-18860d920e96)
+NMOS
+![Screenshot from 2025-04-12 21-59-06](https://github.com/user-attachments/assets/7c96f708-a5cf-4d48-bfbf-15adac647d22)
+PMOS
+![Screenshot from 2025-04-12 21-55-43](https://github.com/user-attachments/assets/1fc9036f-ed5f-4bc1-946b-6eedb6998af4)
+Y(output) connecting the drain of nmos and pmos
+![Screenshot from 2025-04-12 21-58-31](https://github.com/user-attachments/assets/90b76091-a32a-4c7e-8416-bc88c930f89b)
+Poly
+![Screenshot from 2025-04-12 22-00-11](https://github.com/user-attachments/assets/9f081bb3-d615-423c-98d7-777701c13166)
+
+
 
 
 
