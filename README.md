@@ -508,6 +508,7 @@ open sky130A.tech file as shown below
 <br>
 next step is to load the sky130A.tech file in tckon window as as shown below:
 <br>
+
 ![Screenshot from 2025-04-13 12-18-41](https://github.com/user-attachments/assets/4ec15f54-f9f3-460b-8338-b710a6a24256)
 <br>
 
