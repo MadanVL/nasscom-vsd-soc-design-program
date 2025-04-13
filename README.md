@@ -547,7 +547,13 @@ for the extraction of lef file ,enter the given below command in the tckon windo
 ```
 lef write
 ```
-![Screenshot from 2025-04-13 14-57-52](https://github.com/user-attachments/assets/4cc5d303-7050-461e-a708-1fc31f7f985d)
+![Screenshot from 2025-04-13 19-07-06](https://github.com/user-attachments/assets/92e2ab6b-adc2-4aa7-90e7-bab456d575c5)
+![Screenshot from 2025-04-13 19-07-37](https://github.com/user-attachments/assets/1b9833af-0334-457d-9388-afdadcc6a76e)
+
+now the *sky130_inv.lef* file is created in *vsdstdcelldesign* folder in *openlane* directory.
+
+![Screenshot from 2025-04-13 19-09-13](https://github.com/user-attachments/assets/1db2bd47-5eca-4ce7-9b48-cf171e1891ee)
+
 
 
 
