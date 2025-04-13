@@ -372,6 +372,50 @@ Poly
 ![Screenshot from 2025-04-12 22-00-11](https://github.com/user-attachments/assets/9f081bb3-d615-423c-98d7-777701c13166)
 CMOS fabrication 
 ![Screenshot 2025-04-12 215022](https://github.com/user-attachments/assets/97f40cec-99c8-4350-9730-536ba7936453)
+Spice file
+![Screenshot from 2025-04-13 09-33-00](https://github.com/user-attachments/assets/137b8f19-c308-46fe-8fc6-ac2b6dca77ec)
+
+2.Editing the spice model file for analysis through simulation. Edited spice file
+![Screenshot from 2025-04-13 10-01-05](https://github.com/user-attachments/assets/f8381a63-2e85-4c50-b4f2-c355558bceba)
+
+ 3.Spice extraction of inverter in magic.  
+
+```bash
+  #Check current directory
+  pwd
+
+  #Extraction command to extract to .ext format
+  extract all
+
+  #Before converting ext to spice this command enable the parasitic extraction also
+  ext2spice cthresh 0 rthresh 0
+
+  #Converting to ext to spice
+  ext2spice
+```
+
+![Screenshot from 2025-04-13 09-25-35](https://github.com/user-attachments/assets/be1ac524-24b7-411f-bdcb-3a28293f5197)
+ 4.Ngspice simulation
+  Commands for ngspice simulation
+  
+```bash
+  #Command to directly load spice file for simulation to ngspice
+  ngspice sky130_inv.spice
+
+  #Now that we have entered ngspice with the simulation spice file loaded we just have to  load the plot
+  plot y vs time a
+```
+![Screenshot from 2025-04-13 09-49-20](https://github.com/user-attachments/assets/c828dc22-155b-48da-ad4d-3bfa1d0ad0b1)
+Transient Analysis of the CMOS inverter is given below:
+When C=0.07fF
+ ![Screenshot from 2025-04-13 09-50-04](https://github.com/user-attachments/assets/dd45778d-f6a3-4075-a919-7574844b248d)
+when C=2fF
+![Screenshot from 2025-04-13 09-54-03](https://github.com/user-attachments/assets/7dbc06a7-cb9a-4987-867a-d5c5ee531871)
+
+
+
+
+
 
 
 
