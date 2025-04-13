@@ -459,6 +459,68 @@ thefore cell fall delay = (4.077 -4.05)e-09 = 0.027e-09 s
 
 </ul>
 
+### INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
+<ul>
+First step is to download the lab files required for DRC error fixing by below coammand
+    
+```
+   wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+```
+to open magic use 
+```
+  magic -d XR
+
+```
+![Screenshot from 2025-04-13 11-56-05](https://github.com/user-attachments/assets/983b78a2-2145-428d-8136-26796249ee16)
+![Screenshot from 2025-04-13 11-58-28](https://github.com/user-attachments/assets/d1c14eb3-5d20-4f67-80a9-84ae89536ddb)
+.magicrc file
+![Screenshot from 2025-04-13 11-57-40](https://github.com/user-attachments/assets/431cfce0-aab9-4ba7-a54b-c6d41ad22a50)
+
+Open met met3.mag file from file -> Open in magic window
+
+![Screenshot from 2025-04-13 12-01-01](https://github.com/user-attachments/assets/defa4041-eb6d-479b-a962-a0a6ce6ae758)
+![Screenshot from 2025-04-13 12-01-38](https://github.com/user-attachments/assets/a67f7acc-67b3-4d60-b4ef-da7fcfdfe794)
+<br>
+
+ ![Screenshot from 2025-04-13 12-05-25](https://github.com/user-attachments/assets/e5dfe07f-d453-485c-83d3-d467a2cffd1c)
+ 
+![Screenshot from 2025-04-13 12-05-32](https://github.com/user-attachments/assets/d8ecf475-fe49-453c-94b7-df979bdc3605)
+![Screenshot from 2025-04-13 12-06-54](https://github.com/user-attachments/assets/89af72ad-e06b-4d97-a2a4-df663910a0d4)
+
+<br>
+There are some changes to be made in **sky130A.tech file**. Search for the **poly.9** in the **sky130A.tech** file. It appears in both the **POLY** and **uhrpoly** sections,changes given below:
+
+open sky130A.tech file as shown below
+<br>
+
+![Screenshot 2025-04-13 125739](https://github.com/user-attachments/assets/0ede15cf-3fdb-416b-a3c4-e58eb1087de6)
+
+<br>
+
+<br>
+![Screenshot from 2025-04-13 12-13-11](https://github.com/user-attachments/assets/4e6c523b-63ad-4f2c-91da-3fbf428cd330)
+<br>
+<br>
+
+![Screenshot from 2025-04-13 12-16-32](https://github.com/user-attachments/assets/e3a93a31-4dfd-4e06-8825-e0c5e820fcef)
+
+<br>
+next step is to load the sky130A.tech file in tckon window as as shown below:
+<br>
+![Screenshot from 2025-04-13 12-18-41](https://github.com/user-attachments/assets/4ec15f54-f9f3-460b-8338-b710a6a24256)
+<br>
+
+DRC is checked as shown in below image:
+<br>
+![Screenshot from 2025-04-13 12-20-40](https://github.com/user-attachments/assets/932bc1af-1481-443e-a39c-529ce2975284)
+<br>
+
+
+
+
+
+
+
 
 
 
