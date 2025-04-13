@@ -516,6 +516,39 @@ DRC is checked as shown in below image:
 <br>
 ![Screenshot from 2025-04-13 12-20-40](https://github.com/user-attachments/assets/932bc1af-1481-443e-a39c-529ce2975284)
 <br>
+</ul>
+
+## DAY-4
+
+
+### PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS <ul>
+The next step is to get the **.lef** file from the inverter design.
+
+Open the tracks.info file 
+directory is : 
+```
+openlane_working_dir/pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info 
+```
+![Screenshot from 2025-04-13 14-27-10](https://github.com/user-attachments/assets/283d203f-0fd1-4e26-a65b-ad6dd3d3a6aa)
+
+Change grid into tracks in console window as shown in below image:
+![Screenshot from 2025-04-13 14-31-00](https://github.com/user-attachments/assets/71b10579-3438-44dc-9d97-a7ebe1f35668)
+![Screenshot from 2025-04-13 14-32-46](https://github.com/user-attachments/assets/4d99b07e-3dae-4485-98ff-6a5d5a688960)
+![Screenshot from 2025-04-13 14-33-04](https://github.com/user-attachments/assets/67cd8257-45f3-48cf-85d3-0620e8ea9624)
+
+Intersection of grids at the input(A) and output(Y) of the inverter.
+![Screenshot from 2025-04-13 14-34-21](https://github.com/user-attachments/assets/abf9353d-e49a-4333-920f-f35bfe3c32da)
+![Screenshot from 2025-04-13 14-40-16](https://github.com/user-attachments/assets/05d5b600-764d-4064-ae4d-f35242163d7b)
+
+*<li>Steps to convert magic layout to std cell LEF</li>*
+
+for the extraction of lef file ,enter the given below command in the tckon window.
+
+```
+lef write
+```
+![Screenshot from 2025-04-13 14-57-52](https://github.com/user-attachments/assets/4cc5d303-7050-461e-a708-1fc31f7f985d)
+
 
 
 
