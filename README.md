@@ -423,7 +423,8 @@ click on the waveforms to get values i.e
 1) **Rise time**- Time taken to the output waveform to 20% value to 80% value.
 
 <br>
-![Screenshot 2025-04-13 102528](https://github.com/user-attachments/assets/8668e443-901b-4460-9906-4f95a2d3b911)
+
+![Screenshot 2025-04-13 102528](https://github.com/user-attachments/assets/d18974c0-8425-48c4-ada0-6ed073bdc82f)
 
 <br>
 therfore rise time= (2.24 - 2.18)e-09 = 0.64e-09s
@@ -439,7 +440,9 @@ therfore fall time = (2.17999 - 2.12)e-09 = 0.5999e-09s
 5) **cell rise delay**-Time difference between the 50% value of input and 50% value of the output.
 
 <br>
-![Screenshot 2025-04-13 102543](https://github.com/user-attachments/assets/3f196043-1a3c-4919-bfef-4e1ecf7a7f4d)
+
+![Screenshot 2025-04-13 102543](https://github.com/user-attachments/assets/92003410-05bc-498f-acac-1c1a9f6f7bf9)
+
 
 <br>
 therfore cell rise delay or propogation delay = (2.2107 - 2.1501)e-09 = 0.061e-09s
