@@ -554,6 +554,75 @@ now the *sky130_inv.lef* file is created in *vsdstdcelldesign* folder in *openla
 
 ![Screenshot from 2025-04-13 19-09-13](https://github.com/user-attachments/assets/1db2bd47-5eca-4ce7-9b48-cf171e1891ee)
 
+The next step is to copy the newly created *.lef* file to src folder of *picorv32a* directory along with some important libraries.
+
+libraries are present in following directory
+![Screenshot 2025-04-14 174756](https://github.com/user-attachments/assets/ec8c7289-cf8d-4d85-a5fd-f60f31133c54)
+![Screenshot from 2025-04-13 21-14-50](https://github.com/user-attachments/assets/34b41a86-599c-41dd-8ba5-2e229a1b5394)
+
+Now the next step is to edit the config.tcl of picorv32a design.
+
+![Screenshot from 2025-04-14 11-14-12](https://github.com/user-attachments/assets/aeb8eace-0225-4239-b1f6-e2e3aa0bad4a)
+
+config.tcl file is present in picorv32a folder
+
+NOW go to the openlane directory run **docker** command to go to bash terminal
+
+next commands are given below:
+
+```
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      
+add_lefs -src $lefs
+run_synthesis
+```
+![Screenshot from 2025-04-14 11-05-49](https://github.com/user-attachments/assets/f3879604-b67d-490d-be8f-9c50d98f054a)
+![Screenshot from 2025-04-14 11-13-27](https://github.com/user-attachments/assets/6bebb053-6f1e-472a-9ced-08c138d4f2bb)
+
+**<li> Steps to configure synthesis settings to fix slack </li>**
+
+Once the synthesis is sucessfull, check the slack
+
+![Screenshot from 2025-04-14 12-31-42](https://github.com/user-attachments/assets/214f0302-49d0-4091-acf3-32732ec44a85)
+![Screenshot from 2025-04-14 12-33-14](https://github.com/user-attachments/assets/9f0a6c71-9dbc-4bcd-b3df-bc50a2102387)
+
+we get wns= -23.89  and tns== -711.5.
+
+next command is to run floorplan
+
+```
+run_floorplan
+
+```
+if error occurs in floorplan stage use below commands one by one :
+```
+init_floorplan
+
+place_io
+
+tap_decap_or
+
+```
+![Screenshot from 2025-04-14 12-39-24](https://github.com/user-attachments/assets/cde42ef5-27c2-4a8f-bc1c-0594fcfdc563)
+![Screenshot from 2025-04-14 12-40-23](https://github.com/user-attachments/assets/df87b5a4-ad57-4b39-8132-19daaf5973d8)
+![Screenshot from 2025-04-14 17-32-46](https://github.com/user-attachments/assets/1048e039-32d2-4049-a5ee-432fbec861d8)
+![Screenshot from 2025-04-14 17-33-30](https://github.com/user-attachments/assets/6c965f4a-24dc-4402-bdfb-6e6e797fcadf)
+
+next command is to run placement
+```
+run_placement
+
+```
+![Screenshot from 2025-04-14 17-38-02](https://github.com/user-attachments/assets/3981dd89-861d-4b25-81d2-b595050f0b28)
+
+
+
+
+
+
+
 
 
 
