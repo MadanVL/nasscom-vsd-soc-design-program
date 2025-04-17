@@ -617,6 +617,26 @@ run_placement
 ```
 ![Screenshot from 2025-04-14 17-38-02](https://github.com/user-attachments/assets/3981dd89-861d-4b25-81d2-b595050f0b28)
 The standard cell inverter can be seen in the below image using magic tool
+![Screenshot from 2025-04-14 18-30-33](https://github.com/user-attachments/assets/b9226a86-d938-4acc-9f17-978bbd15523b)
+use the below command in tckon window to check whether inverter placed properly or not
+```
+expand
+```
+![Screenshot from 2025-04-14 18-39-43](https://github.com/user-attachments/assets/f3d8ae3e-f87e-4755-bb43-e51e838826af)
+![Screenshot from 2025-04-14 18-54-22](https://github.com/user-attachments/assets/f4de0937-8816-448b-96f0-94a891f443d9)
+![Screenshot from 2025-04-14 19-00-50](https://github.com/user-attachments/assets/7786d11a-78bc-4cdc-9acb-f0873087472a)
+![Screenshot from 2025-04-14 18-54-49](https://github.com/user-attachments/assets/6cb3e238-0f53-453c-8ba5-50bb5166d207)
+
+next create a my_base.sdc file in openlane/designs/picorv32a/src directory. write the code as given in below image in my_base.sdc file.
+![Screenshot from 2025-04-15 19-37-05](https://github.com/user-attachments/assets/da3c6b1c-899b-4a74-b8e4-d3ef5e8e0d28)
+![Screenshot from 2025-04-15 19-34-27](https://github.com/user-attachments/assets/152cef12-eb8c-4e29-90f7-f0aa4f66805d)
+![Screenshot from 2025-04-15 19-35-30](https://github.com/user-attachments/assets/c55ee800-c98d-4d21-9c0c-4eef9cc855cc)
+![Screenshot from 2025-04-15 23-06-45](https://github.com/user-attachments/assets/bea8dfd6-d21b-4038-897b-812d0d1a0224)
+![Screenshot from 2025-04-15 23-33-34](https://github.com/user-attachments/assets/bce96766-cf44-4a3d-81ac-5e89a1f0dbad)
+![Screenshot from 2025-04-15 23-56-55](https://github.com/user-attachments/assets/2c8b7a24-7639-47c8-9106-584f29397351)
+
+
+
 
 
 
