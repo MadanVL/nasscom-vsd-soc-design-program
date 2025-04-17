@@ -634,6 +634,107 @@ next create a my_base.sdc file in openlane/designs/picorv32a/src directory. writ
 ![Screenshot from 2025-04-15 23-06-45](https://github.com/user-attachments/assets/bea8dfd6-d21b-4038-897b-812d0d1a0224)
 ![Screenshot from 2025-04-15 23-33-34](https://github.com/user-attachments/assets/bce96766-cf44-4a3d-81ac-5e89a1f0dbad)
 ![Screenshot from 2025-04-15 23-56-55](https://github.com/user-attachments/assets/2c8b7a24-7639-47c8-9106-584f29397351)
+To Run clocktree synthesis use below command :
+
+```
+run_cts
+```
+![Screenshot from 2025-04-16 00-00-15](https://github.com/user-attachments/assets/b6ceb29c-7de6-44c1-b467-c2d695638c05)
+
+next commands :
+
+```
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+```
+
+
+```
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/16-02_07-04/results/placement/picorv32a.placement.def
+run_cts
+
+```
+
+
+<li> Enter the openROAD flow and check timing by using the following commands </li>
+
+```
+openroad
+read_lef /openLANE_flow/designs/picorv32a/runs/16-02_07-04/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/16-02_07-04/results/cts/picorv32a.cts.def
+write_db pico_cts1.db
+read_db pico_cts1.db
+read_verilog /openLANE_flow/designs/picorv32a/runs/16-02_07-043/results/synthesis/picorv32a.synthesis_cts.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+set_propagated_clock [all_clocks]
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+exit
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+
+```
+![Screenshot from 2025-04-16 00-18-08](https://github.com/user-attachments/assets/dced4030-6ce8-45c7-ba92-f494fc38735f)
+
+
+## DAY-5 
+
+
+###  Final step for RTL2GDS using tritinRoute and openSTA
+
+first step is to build  the power distribution network by follwing command :
+```
+gen_pdn
+
+```
+![Screenshot from 2025-04-16 23-58-36](https://github.com/user-attachments/assets/a40f60e6-1d2a-4d13-bc41-ba2ee3c14bc8)
+![Screenshot from 2025-04-16 23-58-53](https://github.com/user-attachments/assets/296647d3-3872-481b-bb83-aa1207032e30)
+
+To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
+
+```
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
+```  Commands to load PDN def in magic in another terminal
+
+```bash
+  #Change directory to path containing generated PDN def
+  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-02_07-04/tmp/floorplan/
+
+  #Command to load the PDN def in magic tool
+  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
+
+```
+![Screenshot 2025-04-17 195641](https://github.com/user-attachments/assets/80d209d8-a0bd-4fef-b68e-bacbff428c31)
+![Screenshot 2025-04-17 195656](https://github.com/user-attachments/assets/250fddd1-b2c3-470d-98fe-8db9ada085b1)
+ Final step is routing to run routing use below command :
+
+```
+run_routing
+```
+![Screenshot from 2025-04-17 00-24-15](https://github.com/user-attachments/assets/262f671c-7c77-46ca-bac4-f4788793ae2d)
+![Screenshot from 2025-04-17 00-35-33](https://github.com/user-attachments/assets/41bf7f9e-69da-4dcc-8899-a3d6af45cc20)
+
+To view the final design  with routing in Magic tool , go to the results/routing/ in  the runs folder of openlane directory by using below command :
+
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
+
+```
+![Screenshot from 2025-04-17 19-07-42](https://github.com/user-attachments/assets/cd89a5b8-8cdd-433f-947b-c09e60b752e5)
+![Screenshot from 2025-04-17 19-08-33](https://github.com/user-attachments/assets/dd1bf345-9ddd-4bec-8b51-690b079a0b77)
+![Screenshot from 2025-04-17 19-08-23](https://github.com/user-attachments/assets/61d4785b-4387-4467-b4ee-7680effa9656)
+
+
+## Acknowledgement
+
+
+I want to give a big thank you to Mr. Kunal Ghosh, one of the founders of VLSI System Design (VSD) Corp. Pvt. Ltd., and Mr. Nickson Jose for their amazing help during the DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING workshop. They really know their stuff when it comes to chip design using OpenLANE software and other cool techniques. Their guidance has been super valuable in teaching me all about it.
+
 
 
 
