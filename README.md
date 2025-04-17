@@ -616,6 +616,7 @@ run_placement
 
 ```
 ![Screenshot from 2025-04-14 17-38-02](https://github.com/user-attachments/assets/3981dd89-861d-4b25-81d2-b595050f0b28)
+The standard cell inverter can be seen in the below image using magic tool
 
 
 
